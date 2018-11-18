@@ -4,6 +4,7 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const minifyCSS = require("gulp-csso");
 const webserver = require("gulp-webserver");
+const clean = require("gulp-clean");
 
 sass.compiler = require("node-sass");
 
@@ -37,6 +38,10 @@ gulp.task("webserver", function() {
       https: false
     })
   );
+});
+
+gulp.task("clean", function() {
+  return gulp.src("build", { read: false }).pipe(clean());
 });
 
 gulp.task("watch", function() {
