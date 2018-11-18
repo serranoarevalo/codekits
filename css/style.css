@@ -1,0 +1,74 @@
+@import "./reset.css";
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+body {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont,
+    ".SFNSText-Regular", "Helvetica Neue", Helvetica, Roboto, sans-serif;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.header {
+  padding: 2em 0;
+}
+
+.header .header__logo {
+  display: inline;
+  background-color: var(--primary);
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.hero .hero__title {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.hero .hero__subtitle {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #53627c;
+  width: 50%;
+  text-align: center;
+}
