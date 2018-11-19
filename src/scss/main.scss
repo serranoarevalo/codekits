@@ -14,3 +14,25 @@ body {
   width: 100%;
   max-width: 1200px;
 }
+
+.btn {
+  padding: 10px 16px;
+  min-width: 152px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.1), 0 3px 4px 0 rgba(10, 31, 68, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.1), 0 10px 16px 0 rgba(0, 12, 32, 0.1);
+}
+
+.btn--accent {
+  background-color: $primary;
+  color: white;
+}

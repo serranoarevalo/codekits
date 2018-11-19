@@ -34,4 +34,44 @@
     grid-row-gap: 50px;
     margin-top: 100px;
   }
+  .details__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .btn {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  .details__numbers {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: $heroRadius;
+    background-color: $light;
+    padding: 32px;
+    .detailNumber {
+      width: 33%;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+  .detail__screens {
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    img {
+      border-radius: $heroRadius;
+      margin-top: 50px;
+      max-width: 100%;
+    }
+  }
 }

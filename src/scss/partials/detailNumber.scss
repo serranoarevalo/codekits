@@ -1,0 +1,11 @@
+.detailNumber {
+  text-align: center;
+  .detailNumber__number {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .detailNumber__key {
+    color: $gray;
+    font-weight: 400;
+  }
+}

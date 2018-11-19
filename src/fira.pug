@@ -1,6 +1,7 @@
 extends layouts/main
 include mixins/techCircle
 include mixins/detailFeature
+include mixins/detailNumber
 
 block content
     .detail
@@ -21,6 +22,18 @@ block content
                 +techCircle({
                     name:'android'
                 })
+        .details__numbers
+            +detailNumber({
+                number: 10,
+                key:'Screens'
+            })
+            +detailNumber({
+                number: 50,
+                key:'Components'
+            })
+        .details__buttons
+            a(href="#").btn Preview
+            a(href="#").btn.btn--accent Download
         .detail__features
             +detailFeature({
                 title:'iOS & Android Compatible',
@@ -46,3 +59,6 @@ block content
                 title:'Documentation Available',
                 description: 'Integrate on your project seamlessly with the Story Book documentation provided.'
             })
+        .detail__screens
+            h5.detail__small-title Screens Included
+            img(src="./images/firaScreens.png")
