@@ -1,3 +1,4 @@
+include techCircle
 mixin codekitCard(codekit = {})
     .codekit
         a(href=codekit.link)
@@ -8,5 +9,8 @@ mixin codekitCard(codekit = {})
                     span=codekit.title
                 .codekit__description
                     span=codekit.description
+                .codekit__techs
+                    each tech in codekit.techs
+                        +techCircle({name: tech})
                 .codekit__price
                     span=codekit.price

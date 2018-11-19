@@ -27,8 +27,31 @@
       font-weight: 400;
       margin-bottom: 20px;
     }
+    .codekit__techs {
+      margin-bottom: 20px;
+      display: flex;
+      font-size: 22px;
+      .techCircle {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        .react {
+          color: #61dafb;
+        }
+        .js {
+          color: $yellow;
+        }
+        .apple {
+          color: #393939;
+        }
+        .android {
+          color: #78c257;
+        }
+      }
+    }
     .codekit__price {
       margin-bottom: 10px;
+      font-size: 16px;
       span {
         background-color: $success;
         color: white;
