@@ -1,0 +1,16 @@
+.detailFeature {
+  padding-left: 50px;
+  text-align: center;
+  .detailFeature__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $gray-dark;
+    margin-bottom: 15px;
+  }
+  .detailFeature__subtitle {
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.3;
+  }
+}

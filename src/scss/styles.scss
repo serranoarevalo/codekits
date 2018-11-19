@@ -1,8 +1,14 @@
 @import "./config/_reset";
 @import "./config/_variables";
+
 @import "./main";
+
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/hero";
 @import "./partials/codekitCard";
+@import "./partials/techCircle";
+@import "./partials/detailFeature";
+
 @import "./pages/home";
+@import "./pages/detail";

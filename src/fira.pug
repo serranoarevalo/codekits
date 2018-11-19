@@ -1,0 +1,48 @@
+extends layouts/main
+include mixins/techCircle
+include mixins/detailFeature
+
+block content
+    .detail
+        .detail__hero(style=`background-image:url("../images/firaHero.png")`)
+        .detail__header
+            span.detail__title Fira
+            span.detail__subtitle eCommerce App React Native Codekit
+            div.detail__techs
+                +techCircle({
+                    name:'react'
+                })
+                +techCircle({
+                    name:'javascript'
+                })
+                +techCircle({
+                    name:'apple'
+                })
+                +techCircle({
+                    name:'android'
+                })
+        .detail__features
+            +detailFeature({
+                title:'iOS & Android Compatible',
+                description: 'Built with React Native, this code kit can be used for both platforms.'
+            })
+            +detailFeature({
+                title:'No Native Dependencies',
+                description: 'This Code Kit works with the latest Expo version.'
+            })
+            +detailFeature({
+                title:'Navigation Included',
+                description: 'Tab Bar, Headers already set up. Powered by React Navigation.'
+            })
+            +detailFeature({
+                title:'Static Typechecking',
+                description: 'We use Typescript to minimize bugs and improve the code quality.'
+            })
+            +detailFeature({
+                title:'Built with Styled Components',
+                description: 'Easy customization and clean code.'
+            })
+            +detailFeature({
+                title:'Documentation Available',
+                description: 'Integrate on your project seamlessly with the Story Book documentation provided.'
+            })

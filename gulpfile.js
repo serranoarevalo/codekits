@@ -5,6 +5,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const minifyCSS = require("gulp-csso");
 const webserver = require("gulp-webserver");
 const clean = require("gulp-clean");
+const image = require("gulp-image");
 
 sass.compiler = require("node-sass");
 
@@ -45,12 +46,19 @@ gulp.task("clean", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch("src/**/**", ["html", "css"]);
+  gulp.watch("src/**/**", ["html", "css", "images"]);
 });
 
 gulp.task("copy", function() {
   gulp.src("CNAME", { base: "./" }).pipe(gulp.dest("build"));
 });
 
-gulp.task("default", ["html", "css", "watch", "webserver"]);
-gulp.task("build", ["html", "css", "copy"]);
+gulp.task("images", function() {
+  gulp
+    .src("src/images/*")
+    .pipe(image())
+    .pipe(gulp.dest("./build/images"));
+});
+
+gulp.task("default", ["watch", "webserver"]);
+gulp.task("build", ["html", "css", "images", "copy"]);
