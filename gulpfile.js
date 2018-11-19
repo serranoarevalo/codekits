@@ -48,5 +48,9 @@ gulp.task("watch", function() {
   gulp.watch("src/**/**", ["html", "css"]);
 });
 
+gulp.task("copy", function() {
+  gulp.src("CNAME", { base: "./" }).pipe(gulp.dest("build"));
+});
+
 gulp.task("default", ["html", "css", "watch", "webserver"]);
-gulp.task("build", ["html", "css"]);
+gulp.task("build", ["html", "css", "copy"]);
