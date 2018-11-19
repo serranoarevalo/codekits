@@ -46,7 +46,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch("src/**/**", ["html", "css", "images"]);
+  gulp.watch("src/**/**", ["html", "css"]);
 });
 
 gulp.task("copy", function() {
@@ -61,4 +61,4 @@ gulp.task("images", function() {
 });
 
 gulp.task("default", ["watch", "webserver"]);
-gulp.task("build", ["html", "css", "images", "copy"]);
+gulp.task("build", ["html", "css", "copy", "images"]);

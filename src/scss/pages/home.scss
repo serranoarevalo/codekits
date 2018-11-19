@@ -1,7 +1,8 @@
 .codekits {
-  background-color: $light;
-  padding: 72px;
+  // background-color: $light;
+  // padding: 72px;
   border-radius: $heroRadius;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+  grid-gap: 50px;
 }
