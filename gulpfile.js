@@ -51,12 +51,13 @@ gulp.task("watch", function() {
 
 gulp.task("copy", function() {
   gulp.src("CNAME", { base: "./" }).pipe(gulp.dest("build"));
+  gulp.src("src/favicon.ico").pipe(gulp.dest("build"));
 });
 
 gulp.task("images", function() {
   gulp
     .src("src/images/*")
-    .pipe(image())
+    .pipe(image({ concurrent: 10 }))
     .pipe(gulp.dest("./build/images"));
 });
 
