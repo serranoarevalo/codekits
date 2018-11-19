@@ -1,0 +1,12 @@
+mixin codekitCard(codekit = {})
+    .codekit
+        a(href=codekit.link)
+            .codekit__image-container
+                img.codekit__image(src=codekit.image)
+            .codekit__content
+                .codekit__name
+                    span=codekit.title
+                .codekit__description
+                    span=codekit.description
+                .codekit__price
+                    span=codekit.price

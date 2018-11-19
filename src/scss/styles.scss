@@ -1,57 +1,8 @@
 @import "./config/_reset";
 @import "./config/_variables";
-
-body {
-  font-family: "San Francisco", -apple-system, BlinkMacSystemFont,
-    ".SFNSText-Regular", "Helvetica Neue", Helvetica, Roboto, sans-serif;
-  color: $dark;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 1100px;
-}
-
-.header {
-  padding: 2em 0;
-}
-
-.header .header__logo {
-  display: inline;
-  color: $primary;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 80px 0;
-}
-
-.hero .hero__title {
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 64px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-}
-
-.hero .hero__subtitle {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
-  color: #53627c;
-  width: 50%;
-  text-align: center;
-}
-
-.codekits {
-  background-color: $light;
-  padding: 72px 72px 0px;
-  border-radius: 32px;
-}
+@import "./main";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/hero";
+@import "./partials/codekitCard";
+@import "./pages/home";

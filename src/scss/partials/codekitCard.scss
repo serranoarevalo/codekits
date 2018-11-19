@@ -1,0 +1,41 @@
+.codekit {
+  box-shadow: 0 0 1px 0 rgba(0, 12, 32, 0.04),
+    0 10px 16px 0 rgba(10, 31, 68, 0.06);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  a {
+    width: 100%;
+  }
+  .codekit__image-container {
+    margin-bottom: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .codekit__content {
+    padding: 0px 10px;
+    .codekit__name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: $gray-dark;
+    }
+    .codekit__description {
+      color: $gray;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .codekit__price {
+      margin-bottom: 10px;
+      span {
+        background-color: $success;
+        color: white;
+        font-weight: 600;
+        padding: 2px 7px;
+        border-radius: 3px;
+      }
+    }
+  }
+}

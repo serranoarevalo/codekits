@@ -1,12 +1,13 @@
-extends layouts/main.pug
+extends layouts/main
+include mixins/codekitCard
 
 block content
-	.wrapper
-		header.header
-			h1.header__logo Codekits
-		.hero
-			.hero__title Doing CSS sucks 🤦🏻‍♂️
-			.hero__subtitle
-				|Download Premium React and React Native UI Components and Starter Kits
-				|that help you finish your products faster.        
+		include partials/header
 		main.codekits
+			+codekitCard({
+				image:'https://project365.design/wp-content/uploads/2018/09/14092018-post-600x338.png',
+				link:"/fira.html",
+				title:'Fira',
+				description: 'Marketplace App React Native Codekit',
+				price: 'Free'
+			})

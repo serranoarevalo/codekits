@@ -1,0 +1,7 @@
+.codekits {
+  background-color: $light;
+  padding: 72px;
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
