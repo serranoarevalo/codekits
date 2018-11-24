@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
     .detailFeatures {
       padding-left: 50px;
     }
@@ -44,11 +44,38 @@
   }
   .details__buttons {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
-    .btn {
-      &:not(:last-child) {
-        margin-right: 20px;
+    .divider {
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 5%;
+      height: 2px;
+      margin: 25px 0px;
+    }
+    .details__pwyw {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        color: $gray;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      .pwyw__btns {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .btn {
+          margin-bottom: 25px;
+          &:not(:last-child) {
+            margin-right: 20px;
+            @include phone {
+              margin-right: 0;
+            }
+          }
+        }
       }
     }
   }

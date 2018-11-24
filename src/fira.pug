@@ -37,7 +37,13 @@ block content
             })
         .details__buttons
             a(href="#").btn Preview
-            a(href="#").btn.btn--accent Download
+            .divider
+            .details__pwyw
+                span Pay what you want
+                .pwyw__btns
+                    a(href="#").btn.btn--accent Download for free
+                    a(href="#").btn.btn--accent Download for $10
+                    a(href="#").btn.btn--accent Download for $20
         .detail__features
             +detailFeature({
                 title:'iOS & Android Compatible',
