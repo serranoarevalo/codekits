@@ -5,7 +5,7 @@ html(lang="es")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		meta(name="author", content="Nicolás Serrano Arévalo nico@nomadcoders.co")
-		meta(name="description", content="Premium React and React Native UI Components and Starter Kits that help you finish your products faster.")
+		block metas
 		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
 		block title
 		link(rel="stylesheet", href="css/styles.css")
@@ -18,3 +18,12 @@ html(lang="es")
 				block content
 				include ../partials/footer
 			block scripts
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-100494511-9")
+			script.
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-100494511-9');
+			
