@@ -32,7 +32,7 @@ block content
                 key:'Screens'
             })
             +detailNumber({
-                number: 50,
+                number: 21,
                 key:'Components'
             })
         .details__buttons
@@ -41,9 +41,9 @@ block content
             .details__pwyw
                 span Pay what you want
                 .pwyw__btns
-                    a(href="#").btn.btn--accent Download for free
-                    a(href="#").btn.btn--accent Download for $10
-                    a(href="#").btn.btn--accent Download for $20
+                    a(href="#!",data-product="546116", data-theme="none").btn.btn--accent.paddle_button Download for free
+                    a(href="#!",data-product="546121", data-theme="none").btn.btn--accent.paddle_button Download for $10
+                    a(href="#!",data-product="546122", data-theme="none").btn.btn--accent.paddle_button Download for $20
         .detail__features
             +detailFeature({
                 title:'iOS & Android Compatible',
@@ -72,3 +72,10 @@ block content
         .detail__screens
             h5.detail__small-title Screens Included
             img(src="./images/firaScreens.png")
+
+
+
+block scripts
+    script(src="https://cdn.paddle.com/paddle/paddle.js")
+    script.
+        Paddle.Setup({ vendor: 31465 })
