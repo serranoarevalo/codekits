@@ -12,7 +12,7 @@ block metas
 
 block content
     .detail
-        .detail__hero(style=`background-image:url("../images/firaHero.png")`)
+        .detail__hero(style=`background-image:url("../images/firaHero.jpg")`)
         .detail__header
             span.detail__title Fira
             span.detail__subtitle eCommerce App React Native Codekit
@@ -39,10 +39,14 @@ block content
                 key:'Components'
             })
         .details__buttons
-            a(href="#").btn Preview
+            .details__pwyw
+                span Preview
+                .pwyw__btns
+                    a(href="https://expo.io/@serranoarevalo/fira", target="_blank").btn Android
+                    a(href="https://snack.expo.io/@git/github.com/serranoarevalo/fira", target="_blank").btn iOS
             .divider
             .details__pwyw
-                span Pay what you want
+                span Download: Pay what you want
                 .pwyw__btns
                     a(href="#!",data-product="546116", data-theme="none").btn.btn--accent.paddle_button Download for free
                     a(href="#!",data-product="546121", data-theme="none").btn.btn--accent.paddle_button Download for $10
@@ -74,7 +78,10 @@ block content
                 })
         .detail__screens
             h5.detail__small-title Screens Included
-            img(src="./images/firaScreens.png")
+            img(src="./images/firaScreens.jpg")
+        .detail__credits
+            span Design by 
+                a(href="https://dribbble.com/elitepixels", target="_blank", rel="nofollow") Kishore
 
 
 

@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 50px;
-    margin-top: 50px;
+    margin: 100px 0px;
     .detailFeatures {
       padding-left: 50px;
     }
@@ -105,8 +105,12 @@
     margin-top: 100px;
     img {
       border-radius: $heroRadius;
-      margin-top: 15px;
+      margin: 50px 0px;
       max-width: 100%;
     }
+  }
+  .detail__credits {
+    text-align: center;
+    font-size: 14px;
   }
 }
