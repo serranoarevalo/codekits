@@ -23,6 +23,7 @@
     "images": "gulp images",
     "dev": "gulp",
     "build": "gulp clean && gulp build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
   }
 }
