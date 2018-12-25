@@ -4,74 +4,76 @@ include mixins/detailFeature
 include mixins/detailNumber
 
 block title
-    title
-        |16 Beautiful React UI Card Components | Codekits 
+	title
+		|16 Beautiful React UI Card Components | Codekits
 
 block metas
-    meta(name="description", content="Free download: A set of 16 Beautiful React UI Card Components")
+	meta(name="description", content="Free download: A set of 16 Beautiful React UI Card Components")
+	meta( property="og:image", content="/images/karakoy.jpg")
+	meta(property="og:title", content="16 Beautiful React UI Card Components | Codekits")
+	meta(property="og:type", content="website")
+	meta(property="og:url", content="https://codekits.co/karakoy.html")
+
 
 block content
-    .detail
-        .detail__hero(style=`background-image:url("../images/karakoy.jpg")`)
-        .detail__header
-            span.detail__title Karakoy
-            span.detail__subtitle A set of 16 Beautiful React UI Card Components
-            div.detail__techs
-                +techCircle({
-                    name:'react'
-                })
-                +techCircle({
-                    name:'javascript'
-                })
-                +techCircle({
-                    name:'apple'
-                })
-                +techCircle({
-                    name:'android'
-                })
-        .details__numbers
-            +detailNumber({
-                number: 16,
-                key:'Components'
-            })
-            +detailNumber({
-                number: "∞",
-                key:'Combinations'
-            })
-           
-        .details__buttons
-            .details__pwyw
-                .pwyw__btns
-                    a(href="https://serranoarevalo.github.io/karakoy", target="_blank").btn Preview
-                    a(href="#!",data-product="546557", data-theme="none").btn.btn--accent.paddle_button Download for free
-        .detail__features
-            +detailFeature({
-                title:'Customizable',
-                description: 'Change Colors, Sizes, Photos and Icons thanks to well defined props.'
-            })
-            +detailFeature({
-                title:'Copy Paste Ready',
-                description: 'Just open the file and copy paste the component to start using it! Works out of the box.'
-            })
-            +detailFeature({
-                title:'Built with Styled Components',
-                description: 'Easy customization and clean code.'
-            })
-            +detailFeature({
-                title:'Responsive',
-                description: 'Use the component on any layout to see the card adapt.'
-            })
-            
-        .detail__screens
-            h5.detail__small-title Preview
-            img(src="./images/karakoy.jpg")
-        .detail__credits
-            span Design by 
-                a(href="https://dribbble.com/alecuffia", target="_blank", rel="nofollow") Alejandro Cuffia
+	.detail
+		.detail__hero(style=`background-image:url("../images/karakoy.jpg")`)
+		.detail__header
+			span.detail__title Karakoy
+			span.detail__subtitle A set of 16 Beautiful React UI Card Components
+			div.detail__techs
+				+techCircle({
+					name:'react'
+				})
+				+techCircle({
+					name:'javascript'
+				})
+				+techCircle({
+					name:'chrome'
+				})
+		.details__numbers
+			+detailNumber({
+				number: 16,
+				key:'Components'
+			})
+			+detailNumber({
+				number: "∞",
+				key:'Combinations'
+			})
+		   
+		.details__buttons
+			.details__pwyw
+				.pwyw__btns
+					a(href="https://serranoarevalo.github.io/karakoy", target="_blank").btn Preview
+					a(href="#!",data-product="546557", data-theme="none").btn.btn--accent.paddle_button Download for free
+		.detail__features
+			+detailFeature({
+				title:'Customizable',
+				description: 'Change Colors, Sizes, Photos and Icons thanks to well defined props.'
+			})
+			+detailFeature({
+				title:'Copy Paste Ready',
+				description: 'Just open the file and copy paste the component to start using it! Works out of the box.'
+			})
+			+detailFeature({
+				title:'Built with Styled Components',
+				description: 'Easy customization and clean code.'
+			})
+			+detailFeature({
+				title:'Responsive',
+				description: 'Use the component on any layout to see the card adapt.'
+			})
+			
+		.detail__screens
+			h5.detail__small-title Preview
+			img(src="./images/karakoy.jpg")
+		.detail__credits
+			span Design by 
+				a(href="https://dribbble.com/alecuffia", target="_blank", rel="nofollow") Alejandro Cuffia
 
 
 
 block scripts
-    script(src="https://cdn.paddle.com/paddle/paddle.js")
-    script.
-        Paddle.Setup({ vendor: 31465 })
+	script(src="https://cdn.paddle.com/paddle/paddle.js")
+	script.
+		Paddle.Setup({ vendor: 31465 })

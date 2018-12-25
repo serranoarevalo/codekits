@@ -7,10 +7,21 @@ block title
 
 block metas
 	meta(name="description", content="Premium React and React Native UI Components and Starter Kits that help you finish your products faster.")
+	meta(property="og:title", content="Codekits: React and React Native UI Components and Starter Kits")
+	meta(property="og:type", content="website")
+	meta(property="og:url", content="https://codekits.co")
 
 block content
 		include partials/header
 		main.codekits
+			+codekitCard({
+				image:'/images/corfuHero.jpg',
+				link:"/corfu.html",
+				title:'Corfu',
+				description: 'Beautiful React UI Kit',
+				price: 'Free',
+				techs: ['react', 'javascript', 'chrome']
+			})
 			+codekitCard({
 				image:'/images/karakoy.jpg',
 				link:"/karakoy.html",

@@ -1,0 +1,74 @@
+extends layouts/main
+include mixins/techCircle
+include mixins/detailFeature
+include mixins/detailNumber
+
+block title
+	title
+		|Corfu: Beautiful React UI Kit| Codekits
+
+block metas
+	meta(name="description", content="Download a beautiful eCommerce App React Native Codekit, 8 Screens and 21 Components")
+	meta( property="og:image", content="/images/corfuHero.jpg")
+	meta(property="og:title", content="eCommerce App React Native Codekit | Codekits")
+	meta(property="og:type", content="website")
+	meta(property="og:url", content="https://codekits.co/fira.html")
+
+block content
+	.detail
+		.detail__hero(style=`background-image:url("/images/corfuHero.jpg")`)
+		.detail__header
+			span.detail__title Corfu
+			span.detail__subtitle Beautiful React UI Kit
+			div.detail__techs
+				+techCircle({
+					name:'react'
+				})
+				+techCircle({
+					name:'javascript'
+				})
+				+techCircle({
+					name:'chrome'
+				})
+		.details__numbers
+			+detailNumber({
+				number: 9,
+				key:'Screens'
+			})
+			+detailNumber({
+				number: '∞',
+				key:'Combinations'
+			})
+		.details__buttons
+			.details__pwyw
+				span Preview
+				.pwyw__btns
+					a(href="https://serranoarevalo.github.io/corfu-demo/", target="_blank").btn Website
+					a(href="https://serranoarevalo.github.io/corfu/", target="_blank").btn Storybook
+			.divider
+			.details__pwyw
+				.pwyw__btns
+					a(href="https://www.npmjs.com/package/corfu", target="_blank").btn.btn--accent Download for free
+		.detail__features
+			+detailFeature({
+				title:'Customizable',
+				description: 'Change Colors, Sizes, Photos and Icons thanks to well defined props.'
+			})
+			+detailFeature({
+				title:'Typescript Ready',
+				description: 'All the components have well defined types.'
+			})
+			+detailFeature({
+				title:'Built with Styled Components',
+				description: 'Easy customization and clean code.'
+			})
+			+detailFeature({
+				title:'Responsive',
+				description: 'Use the component on any layout to see the card adapt.'
+			})
+		.detail__screens
+			h5.detail__small-title Components Preview
+			img(src="./images/corfuPreview.jpg")
+		.detail__credits
+			span Design by 
+				a(href="https://www.sketchappsources.com/contributor/akshaysalekar", target="_blank", rel="nofollow") Akshay Salekar

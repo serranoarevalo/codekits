@@ -4,88 +4,92 @@ include mixins/detailFeature
 include mixins/detailNumber
 
 block title
-    title
-        |eCommerce App React Native Codekit | Codekits 
+	title
+		|eCommerce App React Native Codekit | Codekits
 
 block metas
-    meta(name="description", content="Download a beautiful eCommerce App React Native Codekit, 8 Screens and 21 Components")
+	meta(name="description", content="Download a beautiful eCommerce App React Native Codekit, 8 Screens and 21 Components")
+	meta( property="og:image", content="/images/firaHero.jpg")
+	meta(property="og:title", content="eCommerce App React Native Codekit | Codekits")
+	meta(property="og:type", content="website")
+	meta(property="og:url", content="https://codekits.co/fira.html")
 
 block content
-    .detail
-        .detail__hero(style=`background-image:url("../images/firaHero.jpg")`)
-        .detail__header
-            span.detail__title Fira
-            span.detail__subtitle eCommerce App React Native Codekit
-            div.detail__techs
-                +techCircle({
-                    name:'react'
-                })
-                +techCircle({
-                    name:'javascript'
-                })
-                +techCircle({
-                    name:'apple'
-                })
-                +techCircle({
-                    name:'android'
-                })
-        .details__numbers
-            +detailNumber({
-                number: 8,
-                key:'Screens'
-            })
-            +detailNumber({
-                number: 21,
-                key:'Components'
-            })
-        .details__buttons
-            .details__pwyw
-                span Preview
-                .pwyw__btns
-                    a(href="https://expo.io/@serranoarevalo/fira", target="_blank").btn Android
-                    a(href="https://snack.expo.io/@git/github.com/serranoarevalo/fira", target="_blank").btn iOS
-            .divider
-            .details__pwyw
-                span Download: Pay what you want
-                .pwyw__btns
-                    a(href="#!",data-product="546116", data-theme="none").btn.btn--accent.paddle_button Download for free
-                    a(href="#!",data-product="546121", data-theme="none").btn.btn--accent.paddle_button Download for $10
-                    a(href="#!",data-product="546122", data-theme="none").btn.btn--accent.paddle_button Download for $20
-        .detail__features
-            +detailFeature({
-                title:'iOS & Android Compatible',
-                description: 'Built with React Native, this code kit can be used for both platforms.'
-            })
-            +detailFeature({
-                title:'No Native Dependencies',
-                description: 'This Code Kit works with the latest Expo version.'
-            })
-            +detailFeature({
-                title:'Navigation Included',
-                description: 'Tab Bars, Stacks and Headers already set up. Powered by React Navigation.'
-            })
-            //- +detailFeature({
-                    title:'Static Typechecking',
-                    description: 'We use Typescript to minimize bugs and improve the code quality.'
-                })
-            +detailFeature({
-                title:'Built with Styled Components',
-                description: 'Easy customization and clean code.'
-            })
-            //- +detailFeature({
-                    title:'Documentation Available',
-                    description: 'Integrate on your project seamlessly with the Story Book documentation provided.'
-                })
-        .detail__screens
-            h5.detail__small-title Screens Included
-            img(src="./images/firaScreens.jpg")
-        .detail__credits
-            span Design by 
-                a(href="https://dribbble.com/elitepixels", target="_blank", rel="nofollow") Kishore
+	.detail
+		.detail__hero(style=`background-image:url("/images/firaHero.jpg")`)
+		.detail__header
+			span.detail__title Fira
+			span.detail__subtitle eCommerce App React Native Codekit
+			div.detail__techs
+				+techCircle({
+					name:'react'
+				})
+				+techCircle({
+					name:'javascript'
+				})
+				+techCircle({
+					name:'apple'
+				})
+				+techCircle({
+					name:'android'
+				})
+		.details__numbers
+			+detailNumber({
+				number: 8,
+				key:'Screens'
+			})
+			+detailNumber({
+				number: 21,
+				key:'Components'
+			})
+		.details__buttons
+			.details__pwyw
+				span Preview
+				.pwyw__btns
+					a(href="https://expo.io/@serranoarevalo/fira", target="_blank").btn Android
+					a(href="https://snack.expo.io/@git/github.com/serranoarevalo/fira", target="_blank").btn iOS
+			.divider
+			.details__pwyw
+				span Download: Pay what you want
+				.pwyw__btns
+					a(href="#!",data-product="546116", data-theme="none").btn.btn--accent.paddle_button Download for free
+					a(href="#!",data-product="546121", data-theme="none").btn.btn--accent.paddle_button Download for $10
+					a(href="#!",data-product="546122", data-theme="none").btn.btn--accent.paddle_button Download for $20
+		.detail__features
+			+detailFeature({
+				title:'iOS & Android Compatible',
+				description: 'Built with React Native, this code kit can be used for both platforms.'
+			})
+			+detailFeature({
+				title:'No Native Dependencies',
+				description: 'This Code Kit works with the latest Expo version.'
+			})
+			+detailFeature({
+				title:'Navigation Included',
+				description: 'Tab Bars, Stacks and Headers already set up. Powered by React Navigation.'
+			})
+			//- +detailFeature({
+					title:'Static Typechecking',
+					description: 'We use Typescript to minimize bugs and improve the code quality.'
+				})
+			+detailFeature({
+				title:'Built with Styled Components',
+				description: 'Easy customization and clean code.'
+			})
+			//- +detailFeature({
+					title:'Documentation Available',
+					description: 'Integrate on your project seamlessly with the Story Book documentation provided.'
+				})
+		.detail__screens
+			h5.detail__small-title Screens Included
+			img(src="./images/firaScreens.jpg")
+		.detail__credits
+			span Design by 
+				a(href="https://dribbble.com/elitepixels", target="_blank", rel="nofollow") Kishore
 
 
 
 block scripts
-    script(src="https://cdn.paddle.com/paddle/paddle.js")
-    script.
-        Paddle.Setup({ vendor: 31465 })
+	script(src="https://cdn.paddle.com/paddle/paddle.js")
+	script.
+		Paddle.Setup({ vendor: 31465 })
